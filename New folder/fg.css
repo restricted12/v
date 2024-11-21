@@ -1,0 +1,60 @@
+.contact {
+    padding-top: 2rem;
+    padding-bottom: 18rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70rem;
+}
+
+.contact-form h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+/* Corrected selector for field-box */
+.contact-form .field-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-form .field-box input,
+.contact-form .field-box textarea {
+    flex: 1 1 30rem;
+    padding: 2rem;
+    background: var(--third-bg-color);
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    border: none; /* Add this to remove default input border */
+    outline: none; /* Optional: To remove outline on focus */
+}
+
+/* Optional: Styling for focus state */
+.contact-form .field-box input:focus,
+.contact-form .field-box textarea:focus {
+    border: 2px solid var(--main-color); /* Adding focus border effect */
+    outline: none; /* Ensure no default outline */
+}
+.contact-form .field-box textarea{
+    height: 15rem;
+    resize: none;
+}
+.contact-form .contact-btn{
+    margin-top: 2rem;
+}
+.contact-form .contact-btn .btn{
+    cursor: pointer;
+}
